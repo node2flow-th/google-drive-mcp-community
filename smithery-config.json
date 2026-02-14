@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": ["GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "GOOGLE_REFRESH_TOKEN"],
+  "properties": {
+    "GOOGLE_CLIENT_ID": {
+      "type": "string",
+      "description": "OAuth 2.0 Client ID from Google Cloud Console"
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "type": "string",
+      "description": "OAuth 2.0 Client Secret"
+    },
+    "GOOGLE_REFRESH_TOKEN": {
+      "type": "string",
+      "description": "Refresh token with Drive scope (from OAuth consent flow or OAuth Playground)"
+    }
+  }
+}
