@@ -183,4 +183,13 @@ Use `gd_export_file` to convert Google Workspace files:
 
 ## License
 
-MIT
+MIT License - see [LICENSE](LICENSE)
+
+Copyright (c) 2026 [Node2Flow](https://node2flow.net)
+
+## Links
+
+- [npm Package](https://www.npmjs.com/package/@node2flow/google-drive-mcp)
+- [Google Drive API](https://developers.google.com/drive/api)
+- [MCP Protocol](https://modelcontextprotocol.io/)
+- [Node2Flow](https://node2flow.net)
