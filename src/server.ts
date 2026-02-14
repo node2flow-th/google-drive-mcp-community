@@ -82,6 +82,7 @@ export function handleToolCall(
         description: args.description as string | undefined,
       });
     case 'gd_empty_trash':
+      if (!args.confirm) throw new Error('Set confirm=true to permanently delete all trashed files');
       return client.emptyTrash();
 
     // ========== Permissions ==========

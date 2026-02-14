@@ -344,7 +344,13 @@ export const TOOLS: MCPToolDefinition[] = [
     },
     inputSchema: {
       type: 'object',
-      properties: {},
+      properties: {
+        confirm: {
+          type: 'boolean',
+          description: 'Set to true to confirm permanent deletion of all trashed files (required safety check)',
+        },
+      },
+      required: ['confirm'],
     },
   },
 
