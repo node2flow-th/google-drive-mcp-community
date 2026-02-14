@@ -1,0 +1,54 @@
+{
+  "name": "@node2flow/google-drive-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Google Drive — search, read, create, share, comment, and manage files through 23 tools",
+  "keywords": [
+    "google-drive",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "cursor",
+    "google",
+    "drive",
+    "files",
+    "cloud-storage"
+  ],
+  "author": "Node2Flow <node2flow@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/node2flow-th/google-drive-mcp-community",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/node2flow-th/google-drive-mcp-community.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "google-drive-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "deploy": "wrangler deploy",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
